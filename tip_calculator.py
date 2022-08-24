@@ -12,6 +12,7 @@ bill_with_tip = tip / 100 * bill + bill
 # bill_with_tip = bill * (1 + tip / 100)
 bill_per_person = bill_with_tip / persons
 final_amount = round(bill_per_person, 2)
+final_amount = "{:.2f}".format(bill_per_person)
 
 # or
 # tip_as_percent = tip / 100
